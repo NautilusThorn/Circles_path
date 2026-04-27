@@ -16,3 +16,25 @@ done
 echo "Внимание владельцу зеленого Кадилака! А хотя..."
 sleep 5
 echo "Ka- booooooom"
+
+
+# 27.04.2026
+сегодня сделал простую игру
+# это игра "Угадай число 36"
+```Bash
+#!/bin/bash
+while true
+do
+echo  "Угадай число от 0 до 50 "
+read answer
+if [ "$answer" -gt 36 ]
+then
+echo "Ваше число $answer, но это больше чем я загадал"
+elif [ "$answer" -lt 36 ]
+then
+echo "Ваше число $answer, но это меньше чем я загадал"
+else
+echo "Угадал"
+break
+fi
+done
